@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.step {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #000;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.domain-input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200px;
+}
+
+#repoStatus ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+button {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+.email-content {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+}
+
+#emailTemplate h3 {
+    margin-top: 15px;
+    font-size: 1em;
+    color: #333;
+}
+
+.video-container {
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+}
+
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.note {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-left: 4px solid #000;
+    color: #333;
+    font-style: italic;
+}

@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Your Subdomain - GitHub Pages Setup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register Your Subdomain</h1>
+        <div class="steps">
+            <div class="step">
+                <h2>Tutorial Video</h2>
+                <div class="video-container">
+                    <video controls width="100%">
+                        <source src="tutorial.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                </div>
+            </div>
+
+            <div class="step">
+                <h2>Step 1: Choose Your Subdomain</h2>
+                <div class="domain-input">
+                    <input type="text" id="subdomainInput" placeholder="yourname">
+                    <span>.hujowe-serwery.online</span>
+                </div>
+            </div>
+
+            <div class="step">
+                <h2>Step 2: GitHub Repository Setup</h2>
+                <div id="repoStatus">
+                    <p>Follow these steps to set up your GitHub repository:</p>
+                    <ul>
+                        <li>Create a new repository on GitHub</li>
+                        <li>Name it: <strong>yourusername.github.io</strong></li>
+                        <li>Upload your website files:
+                            <ul>
+                                <li>index.html (required)</li>
+                                <li>style.css (if you have styling)</li>
+                                <li>script.js (if you have JavaScript)</li>
+                                <li>Other assets (images, videos, etc.)</li>
+                            </ul>
+                        </li>
+                        <li>Enable GitHub Pages in repository settings</li>
+                        <li>Wait for your site to be published (may take a few minutes)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step">
+                <h2>Step 3: Send Registration Email</h2>
+                <button id="emailBtn" onclick="generateEmail()">Generate Email</button>
+                <div id="emailTemplate" class="hidden">
+                    <h3>Copy this email template:</h3>
+                    <div class="email-content">
+                        <p>To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="82f1f7e0e6edefe3ebecc2eaf7e8edf5e7aff1e7f0f5e7f0fbacedeceeebece7">[email&#160;protected]</a></p>
+                        <p>Subject: Subdomain Registration Request</p>
+                        <p id="emailBody">
+                            Hello,<br><br>
+                            I would like to register the subdomain: <span id="requestedDomain"></span><br>
+                            My GitHub repository URL is: [Please insert your GitHub Pages URL here]<br>
+                            (Format: https://yourusername.github.io)<br><br>
+                            Thank you!
+                        </p>
+                    </div>
+                    <p class="note">Note: After sending the email, please allow 1-2 days for your subdomain to be registered and activated.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
