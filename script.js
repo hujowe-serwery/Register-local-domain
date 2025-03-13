@@ -9,7 +9,7 @@ function generateEmail() {
     const emailTemplate = document.getElementById('emailTemplate');
     const requestedDomain = document.getElementById('requestedDomain');
     
-    requestedDomain.textContent = subdomain + '.hujowe-serwery.online';
+    requestedDomain.textContent = subdomain + '.local-domain.online';
     emailTemplate.classList.remove('hidden');
 }
 
